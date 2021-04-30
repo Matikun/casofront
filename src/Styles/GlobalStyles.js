@@ -1,6 +1,6 @@
 const globalStyles = {
-	darkRed: 'rgba(220, 53, 69,0.8)',
-	lightRed: 'rgba(220, 53, 69,0.7)',
+	darkRed: 'rgb(255, 89, 90)',
+	lightRed: 'rgb(255, 113, 114)',
 };
 
 export { globalStyles };
