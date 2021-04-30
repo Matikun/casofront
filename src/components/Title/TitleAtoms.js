@@ -9,7 +9,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const TitleText = styled.h1`
-	color: #444;
+	color: #4b4f54;
 	font-size: 5.4vh;
 	font-weight: 500;
 `;
