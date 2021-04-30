@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Route, Switch } from 'react-router';
+import { UsersDataContext } from './Context/UsersDataContext';
+import CheckDataPage from './Pages/CheckDataPage';
+import DonePage from './Pages/DonePage';
+import MainPage from './Pages/MainPage';
+import VehiclesPage from './Pages/VehiclesPage';
+import VisitPage from './Pages/VisitPage';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<UsersDataContext>
+			<Switch>
+				<Route exact path="/">
+					<MainPage />
+				</Route>
+				<Route exact path="/visit">
+					<VisitPage />
+				</Route>
+				<Route exact path="/vehicle">
+					<VehiclesPage />
+				</Route>
+				<Route exact path="/checkdata">
+					<CheckDataPage />
+				</Route>
+				<Route exact path="/done">
+					<DonePage />
+				</Route>
+			</Switch>
+		</UsersDataContext>
+	);
 }
 
 export default App;
