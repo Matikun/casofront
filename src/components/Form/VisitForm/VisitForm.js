@@ -58,6 +58,7 @@ const VisitForm = ({ nextRoute }) => {
 					>
 						<LabelText>Dia de inicio</LabelText>
 						<InputText
+							type="date"
 							placeholder="Hoy"
 							required
 							onChange={(e) =>
@@ -82,6 +83,7 @@ const VisitForm = ({ nextRoute }) => {
 						>
 							<LabelText>Dia de fin</LabelText>
 							<InputText
+								type="date"
 								placeholder="Hoy"
 								onChange={(e) =>
 									dispatch({

@@ -23,6 +23,7 @@ export const InputContainerDynamic = styled(motion.div)`
 `;
 
 export const CalendarIcon = styled(IoMdCalendar)`
+	display: none;
 	position: absolute;
 	bottom: 4px;
 	right: 5px;
